@@ -3,6 +3,8 @@ import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Box;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -19,13 +21,13 @@ public class LoginDialog extends JDialog {
 	
 	private SLogin sLogin;
 	
-	public LoginDialog(MainFrame mainFrame) {
+	public LoginDialog(MainFrame mainFrame, boolean modal) {
 		super(mainFrame);
 		this.setSize(400, 300);
 		
 		LayoutManager layoutManager = new GridLayout(3, 2);
 		this.setLayout(layoutManager);
-				
+
 		JLabel lbId = new JLabel("아이디");
 		this.add(lbId);
 		

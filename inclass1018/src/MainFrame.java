@@ -20,7 +20,7 @@ public class MainFrame extends JFrame {
 		this.add(sugangsincheongPanel, BorderLayout.CENTER);
 		
 		// dialog는 this로 부모를 알려주어야
-		LoginDialog loginDialog = new LoginDialog(this);
+		LoginDialog loginDialog = new LoginDialog(this, true);
 //		this.add(loginPanel, BorderLayout.NORTH);
 		//blocking modal 루 바꾸자. 
 		
